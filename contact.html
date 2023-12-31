@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>お問い合わせ</title>
+    <style>
+        .name {
+            width: 250px;
+            height: 20px;
+        }
+
+        .comm {
+            width: 250px;
+            height: 100px;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .name, .comm {
+            background-color: #f2f4f5;
+            border: none;
+            border-radius: 3px;
+            padding: 15px 20px;
+            font-size: 16px;
+            color: #333;
+            flex-grow: 1;
+        }
+
+        .btn {
+            cursor: pointer;
+            margin-top: 30px;
+            padding: 15px 45px;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #166ab5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>お問い合わせフォーム</h1>
+        <p>下記のフォームにお名前、メールアドレス、お問い合わせ内容を記入し<br>
+            送信ボタンを押してください。
+        </p>
+        <form action="done.php" method="post">
+            お名前
+            <div><input class="name" type="text" placeholder="例) 山田 太朗" name="n"></div>
+            メールアドレス
+            <div><input class="name" type="text" placeholder="例) abc@xyz.com" name="e"></div>
+            お問い合わせ内容
+            <div><textarea class="comm" placeholder="お問い合わせ内容をこちらにご記入ください" name="m"></textarea></div>
+            <input class="btn" type="submit" value="送信">
+        </form>
+    </div>
+</body>
+</html>
