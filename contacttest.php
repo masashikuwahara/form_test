@@ -43,8 +43,8 @@ if ($page > 1) {
 
 $contacts = $db->prepare(" SELECT id, message, created_at FROM contact LIMIT {$start}, 10 ");
 
-echo 'お問い合わせ一覧<br/>';
-echo '<form method="get" action="con_detail.php">';
+echo '<h1>お問い合わせ一覧</h1>';
+echo '<form method="post" action="con_detail.php">';
 $contacts->execute();
 $contacts = $contacts->fetchAll(PDO::FETCH_ASSOC);
 
